@@ -1,6 +1,5 @@
 package com.voidx.github.feature.home.business
 
-import android.util.Log
 import com.voidx.github.data.dto.GitHubRepositoryDTO
 import com.voidx.github.data.dto.GitHubSearchDTO
 import com.voidx.github.data.repository.GitHubSearchDataSource
@@ -29,7 +28,6 @@ class HomeInteractor(private val searchDataSource: GitHubSearchDataSource) {
             .subscribeOn(Schedulers.io())
             .onErrorResumeNext(this::handleErrorIfNeeded)
             .map {
-                Log.i("HomeInteractor", "success")
                 increasePaging(it)
                 it.items
             }

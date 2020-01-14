@@ -2,7 +2,7 @@ package com.voidx.github.feature.home
 
 import com.voidx.github.data.dto.GitHubSearchDTO
 import com.voidx.github.util.TestUtil
-import com.voidx.github.util.TestUtil.Companion.createConnectionErrorObservable
+import com.voidx.github.util.TestUtil.createConnectionErrorObservable
 import io.reactivex.Observable
 
 object HomeObjects {

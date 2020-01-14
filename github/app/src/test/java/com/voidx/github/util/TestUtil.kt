@@ -2,8 +2,8 @@ package com.voidx.github.util
 
 import com.google.gson.Gson
 import io.reactivex.Observable
-import okhttp3.MediaType
-import okhttp3.ResponseBody
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.ResponseBody.Companion.toResponseBody
 import retrofit2.HttpException
 import retrofit2.Response
 import java.io.IOException
@@ -12,12 +12,12 @@ import java.nio.charset.StandardCharsets
 object TestUtil {
 
     fun <T> getObject(fileName: String, classType: Class<T>): T {
-        return Gson().fromJson(getJson(fileName), classType)
+        val json = getJson(fileName)
+        return Gson().fromJson(json, classType)
     }
 
     fun getJson(fileName: String): String {
-        var json: String
-        try {
+        return try {
             val classLoader = ClassLoader.getSystemClassLoader()
             val inputStream = classLoader.getResourceAsStream(fileName)
             val size = inputStream.available()
@@ -26,13 +26,11 @@ object TestUtil {
             inputStream.read(buffer)
             inputStream.close()
 
-            json = String(buffer, StandardCharsets.UTF_8)
+            String(buffer, StandardCharsets.UTF_8)
         } catch (e: IOException) {
             e.printStackTrace()
-            json = "{}"
+            "{}"
         }
-
-        return json
     }
 
     fun <T> createConnectionErrorObservable(): Observable<T> {
@@ -46,7 +44,7 @@ object TestUtil {
 
         val responseError = Response.error<Any>(
             errorCode,
-            ResponseBody.create(MediaType.parse("application/json"), error)
+            error.toResponseBody("application/json".toMediaTypeOrNull())
         )
 
         return HttpException(responseError)
