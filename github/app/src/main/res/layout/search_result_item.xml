@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_02x"
+    app:contentPadding="@dimen/size_01x">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/repo_name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="@dimen/empty"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/empty"
+            android:layout_marginEnd="@dimen/size_01x"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/repo_fork_count"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="@dimen/empty"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/empty"
+            android:layout_marginTop="@dimen/size_01x"
+            android:layout_marginEnd="@dimen/size_01x"
+            android:drawableStart="@drawable/git_fork"
+            android:drawablePadding="@dimen/size_00_5x"
+            android:gravity="center"
+            android:textColor="@color/gamboge"
+            app:layout_constraintStart_toStartOf="@+id/repo_name"
+            app:layout_constraintTop_toBottomOf="@+id/repo_name"
+            tools:text="000" />
+
+        <TextView
+            android:id="@+id/repo_star_count"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="@dimen/empty"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_01x"
+            android:layout_marginTop="@dimen/size_01x"
+            android:drawableStart="@drawable/star"
+            android:drawablePadding="@dimen/size_00_5x"
+            android:gravity="center"
+            android:textColor="@color/gamboge"
+            app:layout_constraintStart_toEndOf="@+id/repo_fork_count"
+            app:layout_constraintTop_toBottomOf="@+id/repo_name"
+            tools:text="000" />
+
+        <TextView
+            android:id="@+id/repo_description"
+            android:layout_width="@dimen/empty"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_02x"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="@id/repo_name"
+            app:layout_constraintStart_toStartOf="@+id/repo_name"
+            app:layout_constraintTop_toBottomOf="@+id/repo_fork_count"
+            tools:text="Description" />
+
+        <ImageView
+            android:id="@+id/author_photo"
+            android:layout_width="@dimen/size_07x"
+            android:layout_height="@dimen/size_07x"
+            android:src="@drawable/account"
+            app:layout_constraintBottom_toTopOf="@+id/author_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="@dimen/empty"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_01x"
+            android:layout_marginTop="@dimen/size_01x"
+            android:layout_marginEnd="@dimen/size_01x"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/author_photo"
+            tools:text="Victor Fernandes" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

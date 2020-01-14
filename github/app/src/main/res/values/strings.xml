@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GitHub</string>
+
+    <string name="empty_results">Nenhum resultado encontrado</string>
+    <string name="unknown_problem">Ooops..  Algo não esta correto.</string>
+
+</resources>

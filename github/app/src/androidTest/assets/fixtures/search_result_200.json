@@ -1,0 +1,130 @@
+{
+    "items": [
+        {
+            "id": 51148780,
+            "name": "architecture-samples",
+            "full_name": "android/architecture-samples",
+            "owner": {
+                "login": "johndoe",
+                "id": 32689599,
+                "avatar_url": "https://avatars3.githubusercontent.com/u/32689599?v=4",
+                "type": "Organization"
+            },
+            "html_url": "https://github.com/android/architecture-samples",
+            "description": "A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.",
+            "created_at": "2016-02-05T13:42:07Z",
+            "updated_at": "2020-01-10T20:01:52Z",
+            "stargazers_count": 35251,
+            "watchers_count": 35251,
+            "forks_count": 9832
+        },
+        {
+            "id": 51148780,
+            "name": "architecture-samples",
+            "full_name": "android/architecture-samples",
+            "owner": {
+                "login": "janedoe",
+                "id": 32689599,
+                "avatar_url": "https://avatars3.githubusercontent.com/u/32689599?v=4",
+                "type": "Organization"
+            },
+            "html_url": "https://github.com/android/architecture-samples",
+            "description": "A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.",
+            "created_at": "2016-02-05T13:42:07Z",
+            "updated_at": "2020-01-10T20:01:52Z",
+            "stargazers_count": 35251,
+            "watchers_count": 35251,
+            "forks_count": 9832
+        },
+        {
+            "id": 51148780,
+            "name": "architecture-samples",
+            "full_name": "android/architecture-samples",
+            "owner": {
+                "login": "babydoe",
+                "id": 32689599,
+                "avatar_url": "https://avatars3.githubusercontent.com/u/32689599?v=4",
+                "type": "Organization"
+            },
+            "html_url": "https://github.com/android/architecture-samples",
+            "description": "A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.",
+            "created_at": "2016-02-05T13:42:07Z",
+            "updated_at": "2020-01-10T20:01:52Z",
+            "stargazers_count": 35251,
+            "watchers_count": 35251,
+            "forks_count": 9832
+        },
+         {
+             "id": 51148780,
+             "name": "architecture-samples",
+             "full_name": "android/architecture-samples",
+             "owner": {
+                 "login": "a",
+                 "id": 32689599,
+                 "avatar_url": "https://avatars3.githubusercontent.com/u/32689599?v=4",
+                 "type": "Organization"
+             },
+             "html_url": "https://github.com/android/architecture-samples",
+             "description": "A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.",
+             "created_at": "2016-02-05T13:42:07Z",
+             "updated_at": "2020-01-10T20:01:52Z",
+             "stargazers_count": 35251,
+             "watchers_count": 35251,
+             "forks_count": 9832
+         },
+        {
+              "id": 51148780,
+              "name": "architecture-samples",
+              "full_name": "android/architecture-samples",
+              "owner": {
+                  "login": "b",
+                  "id": 32689599,
+                  "avatar_url": "https://avatars3.githubusercontent.com/u/32689599?v=4",
+                  "type": "Organization"
+              },
+              "html_url": "https://github.com/android/architecture-samples",
+              "description": "A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.",
+              "created_at": "2016-02-05T13:42:07Z",
+              "updated_at": "2020-01-10T20:01:52Z",
+              "stargazers_count": 35251,
+              "watchers_count": 35251,
+              "forks_count": 9832
+        },
+        {
+                "id": 51148780,
+                "name": "architecture-samples",
+                "full_name": "android/architecture-samples",
+                "owner": {
+                    "login": "c",
+                    "id": 32689599,
+                    "avatar_url": "https://avatars3.githubusercontent.com/u/32689599?v=4",
+                    "type": "Organization"
+                },
+                "html_url": "https://github.com/android/architecture-samples",
+                "description": "A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.",
+                "created_at": "2016-02-05T13:42:07Z",
+                "updated_at": "2020-01-10T20:01:52Z",
+                "stargazers_count": 35251,
+                "watchers_count": 35251,
+                "forks_count": 9832
+        },
+        {
+                "id": 51148780,
+                "name": "architecture-samples",
+                "full_name": "android/architecture-samples",
+                "owner": {
+                    "login": "d",
+                    "id": 32689599,
+                    "avatar_url": "https://avatars3.githubusercontent.com/u/32689599?v=4",
+                    "type": "Organization"
+                },
+                "html_url": "https://github.com/android/architecture-samples",
+                "description": "A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.",
+                "created_at": "2016-02-05T13:42:07Z",
+                "updated_at": "2020-01-10T20:01:52Z",
+                "stargazers_count": 35251,
+                "watchers_count": 35251,
+                "forks_count": 9832
+        }
+    ]
+}
