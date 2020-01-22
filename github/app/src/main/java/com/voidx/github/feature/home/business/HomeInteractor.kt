@@ -23,7 +23,7 @@ class HomeInteractor(private val searchDataSource: GitHubSearchDataSource) {
 
     fun searchRepositories(): Observable<List<GitHubRepositoryDTO>> {
         return searchDataSource
-            .searchRepositories(LANGUAGE_SEARCH.format("Kotlin"), "stars", nextPage)
+            .searchRepositories(LANGUAGE_SEARCH.format("swift"), "stars", nextPage)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribeOn(Schedulers.io())
             .onErrorResumeNext(this::handleErrorIfNeeded)
